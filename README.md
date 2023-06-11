@@ -17,7 +17,7 @@ Packages can be installed by running **setup.sh**:
 sh setup.sh
 ```
 
-If your data are on **Blazegraph**](https://blazegraph.com/):
+If your data are on [**Blazegraph**](https://blazegraph.com/):
 
 after installing the required packages, install [**Blazegraph**](https://blazegraph.com/) locally:
 
