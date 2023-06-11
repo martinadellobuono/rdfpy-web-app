@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Martina Dello Buono">
+    <title>RDFpy web app template</title>
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/105/105220.png">
+</head>
+
+<body>
+    <main class="d-flex flex-nowrap">
+        <!-- texts -->
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-secondary bg-gradient bg-opacity-25 lw-3">
+            <!-- sidebar -->
+            <a class="hamburger fs-3 text-dark text-center" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">RDFpy web app</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="list-group mb-4">
+                        <a href="#" class="list-group-item list-group-item-action active">Home</a>
+                        <a href="#" class="list-group-item list-group-item-action">Documentation</a>
+                    </div>
+                    <div class="list-group">
+                        <a href="/altro" class="list-group-item list-group-item-action" aria-current="true">Visualize data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-light bg-gradient bg-opacity-75 lw-100">
+            <div class="p-5">
+                <h1>RDFpy web app</h1>
+                <p class="text-muted">A web app template in Flask to extract data from Blazegraph and visualize them.
+                </p>
+            </div>
+            <div class="bg-secondary bg-gradient bg-opacity-50 p-5">
+                <h2 class="mb-4">Let's visualize the data</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card card-w-500">
+                            <div class="card-body">
+                                <h5 class="card-title">Giuseppe Raimondi LOD</h5>
+                                <p class="card-text">Insert one/two lines of description.</p>
+                                <a href="" class="btn btn-texts">Go to Giuseppe Raimondi LOD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card card-w-500">
+                            <div class="card-body">
+                                <h5 class="card-title">RePIM</h5>
+                                <p class="card-text">Insert one/two lines of description.</p>
+                                <a href="#" class="btn btn-texts">Go to RePIM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="bg-rimini-water p-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="h5">RDFpy web app</h3>
+                        <p class="text-light">Developed with <i class="bi bi-heart-fill"></i> by <a
+                                href="https://github.com/martinadellobuono"
+                                title="martinadellobuono github">martinadellobuono</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+
+</html>
