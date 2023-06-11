@@ -50,7 +50,16 @@ def altro():
     sparql.setReturnFormat(JSON)
     queryResults =  sparql.query().convert()
 
+    """ list of items """
+    items = []
     for result in queryResults["results"]["bindings"]:
-        print(result)
-
-    return render_template("data.html")
+        items.append(result["islandLabel"]["value"])
+    
+    """ dict of items """
+    itemsDict = {}
+    for i in items:
+        for result in queryResults["results"]["bindings"]:
+            if i == result["islandLabel"]["value"]:
+                itemsDict[i] = result["island"]["value"]
+    
+    return render_template("data.html", itemsDict = itemsDict)
