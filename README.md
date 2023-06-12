@@ -42,5 +42,6 @@ python3 app.py
 - Open the application in your browser: **http://localhost:8000/**
 
 The data are visualized in the frontend in [**Jinjia2**](https://pypi.org/project/Jinja2/).
+
 Frontend toolkit: [**Bootstrap v5.2**](https://getbootstrap.com/docs/5.2/getting-started/introduction/).
 
