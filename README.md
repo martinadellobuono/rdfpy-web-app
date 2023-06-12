@@ -29,7 +29,7 @@ cd data
 java -server -Xmx4g -jar blazegraph.jar
 ```
 
-If your data are on [**Wikidata**](https://www.wikidata.org/wiki/Wikidata:Main_Page)/other endpoint:
+If your data are on [**Wikidata**](https://www.wikidata.org/wiki/Wikidata:Main_Page) or other knowledge base:
 
 change the endpoint and the query in **views.py**
 
