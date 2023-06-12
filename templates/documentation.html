@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Martina Dello Buono">
+    <title>RDFpy web app template</title>
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/105/105220.png">
+</head>
+
+<body>
+    <main class="d-flex flex-nowrap">
+        <!-- texts -->
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-secondary bg-gradient bg-opacity-25 lw-3">
+            <!-- sidebar -->
+            <a class="hamburger fs-3 text-dark text-center" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">RDFpy web app</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="list-group mb-4">
+                        <a href="/" class="list-group-item list-group-item-action">Home</a>
+                        <a href="#" class="list-group-item list-group-item-action active">Documentation</a>
+                    </div>
+                    <div class="list-group">
+                        <a href="/data" class="list-group-item list-group-item-action" aria-current="true">Visualize
+                            data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-light bg-gradient bg-opacity-75 lw-100">
+            <!-- documentation -->
+            <div class="p-5">
+                <div class="mb-4">
+                    <h2>Documentation</h2>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-muted">RDFpy web app template</h3>
+                    <p><b>RDFpy web app template</b> is a <a href="https://www.python.org/downloads/"
+                            title="download python" target="_blank">Python 3</a> web application built in <a
+                            href="https://flask.palletsprojects.com/en/2.3.x/" title="flask" target="_blank">Flask</a>.
+                        The
+                        project is
+                        ongoing and
+                        under
+                        development.</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-muted">Quick start</h3>
+                    <p>Clone the GitHub repository using the URL <a
+                            href="https://github.com/martinadellobuono/rdfpy-web-app-template.git"
+                            title="clone the github repository"
+                            target="_blank">https://github.com/rdfpy-web-app-template.git</a> or
+                        download
+                        the folder.</p>
+                    <p>The project works with this <b>requirement</b>:</p>
+                    <ul>
+                        <li><a href="https://www.python.org/downloads/" title="download python"
+                                target="_blank">Python</a> v3.6.3</li>
+                    </ul>
+                    <p>Packages can be installed by running <b>setup.sh</b>:</p>
+                    <div class="mb-3">
+                        <code>sh setup.sh</code>
+                    </div>
+                    <hr>
+                    <p>If your data are on <a href="https://blazegraph.com/" title="blazegraph"
+                            target="_blank">Blazegraph</a>:</p>
+                    <p>after installing the required packages, install <a href="https://blazegraph.com/"
+                            title="blazegraph" target="_blank">Blazegraph</a> locally:</p>
+                    <ul>
+                        <li>Download <a href="https://github.com/blazegraph/database/releases/tag/BLAZEGRAPH_2_1_6_RC"
+                                title="download blazegraph.jar" target="_blank">blazegraph.jar</a></li>
+                        <li>Create a new <b>folder</b> and rename it <b>data</b></li>
+                        <li>Put <b>blazegraph.jar in data</b> folder</li>
+                        <li>From the terminal enter data and <b>run blazegraph.jar</b>:</li>
+                        <div class="mb-3">
+                            <code>cd data</code>
+                            <br>
+                            <code>java -server -Xmx4g -jar blazegraph.jar</code>
+                        </div>
+
+                    </ul>
+                    <hr>
+                    <p>If your data are on <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" title="wikidata"
+                            target="_blank">Wikidata</a> or other knowledge base:</p>
+                    <p>change the endpoint and the query in <b>views.py</b>.</p>
+                    <hr>
+                    <p>Finally run the application:</p>
+                    <ul>
+                        <li>Run <b>app.py</b></li>
+                        <div class="mb-3">
+                            <code>python3 app.py</code>
+                        </div>
+                        <li>Open the application in your browser: <a href="http://localhost:8000/"
+                                title="localhost:8000" target="_blank">http://localhost:8000/</a></li>
+                    </ul>
+                    <p>The data are visualized in the frontend in <a href="https://pypi.org/project/Jinja2/"
+                            title="jinjia2" target="_blank">Jinjia2</a>.</p>
+                    <p>Frontend toolkit: <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+                            title="bootstrap" target="_blank">Bootstrap v5.2</a>.</p>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="bg-rimini-water p-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="h5">RDFpy web app</h3>
+                        <p class="text-light">Developed with <i class="bi bi-heart-fill"></i> by <a
+                                href="https://github.com/martinadellobuono"
+                                title="martinadellobuono github">martinadellobuono</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+
+</html>

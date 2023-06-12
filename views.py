@@ -56,3 +56,8 @@ def data():
         itemsDict[result["islandLabel"]["value"]] = result["island"]["value"]
     
     return render_template("data.html", itemsDict = itemsDict)
+
+""" documentation """
+@views.route("/documentation")
+def documentation():
+    return render_template("documentation.html")
