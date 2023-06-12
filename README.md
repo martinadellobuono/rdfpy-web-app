@@ -1,7 +1,6 @@
 # RDFpy web app template
 
-**RDFpy web app template** is a [Python 3](https://www.python.org/downloads/) web application built in [Flask](https://flask.palletsprojects.com/en/2.3.x/). 
-The project is ongoing and under development.
+**RDFpy web app template** is a [Python 3](https://www.python.org/downloads/) web application built in [Flask](https://flask.palletsprojects.com/en/2.3.x/).
 
 ## Quick start
 
