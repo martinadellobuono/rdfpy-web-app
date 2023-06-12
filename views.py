@@ -42,7 +42,7 @@ def index():
 
 """ data """
 @views.route("/data")
-def altro():
+def data():
     """ convert data into JSON """
     sparql = SPARQLWrapper(endpoint)
     sparql.setTimeout(55)
@@ -50,16 +50,9 @@ def altro():
     sparql.setReturnFormat(JSON)
     queryResults =  sparql.query().convert()
 
-    """ list of items """
-    items = []
-    for result in queryResults["results"]["bindings"]:
-        items.append(result["islandLabel"]["value"])
-    
     """ dict of items """
     itemsDict = {}
-    for i in items:
-        for result in queryResults["results"]["bindings"]:
-            if i == result["islandLabel"]["value"]:
-                itemsDict[i] = result["island"]["value"]
+    for result in queryResults["results"]["bindings"]:
+        itemsDict[result["islandLabel"]["value"]] = result["island"]["value"]
     
     return render_template("data.html", itemsDict = itemsDict)
